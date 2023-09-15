@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    "mongodb+srv://Bharath:L5vtJS4SkRT24ezS@cluster0.9n7bfvo.mongodb.net/Portfolio_Messages"
+    process.env.connectionString
   )
   .then(() => {
     console.log("DataBase Connection Successful..");
